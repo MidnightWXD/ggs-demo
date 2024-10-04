@@ -40,11 +40,11 @@ const customerController = {
 
         // create customer in local database
         const customer = await Customer.create({
-        name,
-        email,
-        contactInfo,
-        companyId,
-        shopifyCustomerId,
+            name,
+            email,
+            contactInfo,
+            companyId,
+            shopifyCustomerId,
         });
 
         res.status(201).json(customer);
